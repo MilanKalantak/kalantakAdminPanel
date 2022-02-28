@@ -12,13 +12,15 @@ export class AppTopBarComponent {
     profileitems: MenuItem[];
     flagitems:MenuItem[];
     responsiveitems: MenuItem[];
-   
+    side:MenuItem[];
+  
   
    
 
 
     constructor(public appMain: AppMainComponent) { }
     ngOnInit() {
+  
         this.profileitems = [
             {
                label:'Profile',
@@ -68,7 +70,18 @@ export class AppTopBarComponent {
       
          },
      ],
-  
+     this.flagitems=[
+         {
+             
+            label:'US',
+            icon: 'assets/layout/images/us.jpg',
+         },
+         {
+             
+            label:'Spain',
+            url: 'assets/layout/images/spain.jpg',
+         }
+     ],
      this.responsiveitems=[
       {
           
@@ -151,7 +164,28 @@ export class AppTopBarComponent {
 
          ]
       },
-     ]
+     ],
+     this.side=[
+        {
+      icon: 'pi pi-fw pi-id-card'
+     },
+     {
+      icon: 'pi pi-fw pi-id-card'
+     },
+     {
+      icon: 'pi pi-fw pi-id-card'
+     },
+     {
+      icon: 'pi pi-fw pi-id-card'
+     },
+     {
+      icon: 'pi pi-fw pi-id-card'
+     },
+     {
+      icon: 'pi pi-fw pi-id-card'
+     },
+
+   ]
     }
 }
 
