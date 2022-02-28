@@ -1,18 +1,26 @@
 <div class="layout-topbar">
     <a class="layout-topbar-logo" routerLink="">
-        <img src="assets/layout/images/{{appMain.config.dark ? 'kalantak' : 'mylogo'}}.png" alt="logo">
+        <img src="assets/layout/images/{{appMain.config.dark ? 'flag' : 'kalantak'}}.png" alt="logo">
     </a>
+    <div style="border-right: black;">
     <a class="p-link layout-menu-button layout-topbar-button" href="#" (click)="appMain.toggleMenu($event)">
-        <i class="pi pi-bars"></i>
+        <i class="pi pi-bars" ></i>
+    </a>
+</div>
+    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#">
+        <i class="pi pi-ellipsis-v" (click)="responsiveclick.toggle($event)"></i>
     </a>
 
-    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#" (click)="appMain.toggleTopMenu($event)">
+    
+    <!-- <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#" (click)="appMain.toggleTopMenu($event)">
         <i class="pi pi-ellipsis-v"></i>
-    </a>
-    <a class="p-inputgroup {'layout-topbar-menu-mobile-active':appMain.topMenuActive} layout-topbar-menu " >
+    </a> -->
+    <div class="p-inputgroup {'layout-topbar-menu-mobile-active':appMain.topMenuActive} layout-topbar-menu search">
+
         <input type="text" pInputText placeholder="Search...">   
         <button type="button" pButton pRipple icon="pi pi-search" styleClass="p-button-warn"></button>      
-    </a>
+
+</div>
     <div class="layout-topbar-menu " [ngClass]="{'layout-topbar-menu-mobile-active':appMain.topMenuActive}">
         
         <a href="#" class="p-link layout-topbar-button">
@@ -48,11 +56,8 @@
         
         
     </div>
- 
- 
-
-  
 </div>
 <p-menu  [showTransitionOptions]="'0ms'"   #lastmenu [model]="profileitems" [popup]="true" ></p-menu>
 <p-menu   [showTransitionOptions]="'0ms'"  #appmenu [model]="appitems" [popup]="true" ></p-menu>
 <p-menu [showTransitionOptions]="'0ms'"    #flagmenu [model]="flagitems" [popup]="true" ></p-menu>
+<p-menu [showTransitionOptions]="'0ms'"    #responsiveclick [model]="responsiveitems" [popup]="true" ></p-menu>
