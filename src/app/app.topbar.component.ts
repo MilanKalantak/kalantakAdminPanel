@@ -68,18 +68,7 @@ export class AppTopBarComponent {
       
          },
      ],
-   //   this.flagitems=[
-   //       {
-             
-   //          label:'US',
-   //          icon: 'assets/layout/images/us.jpg',
-   //       },
-   //       {
-             
-   //          label:'Spain',
-   //          icon: 'assets/layout/images/spain.jpg',
-   //       }
-   //   ],
+  
      this.responsiveitems=[
       {
           

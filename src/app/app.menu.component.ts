@@ -12,6 +12,7 @@ import { AppMainComponent } from './app.main.component';
                     <div class="layout-menuitem-root-text" [attr.aria-label]="item.label">{{item.label}}</div>
                     <ul role="menu">
                         <li app-menuitem *ngFor="let child of item.items" [item]="child" [index]="i" role="none"></li>
+
                     </ul>
                 </li>
                 <a href="https://www.primefaces.org/primeblocks-ng/#/">
