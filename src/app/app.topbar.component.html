@@ -1,5 +1,5 @@
 <div class="layout-topbar">
-    <a class="layout-topbar-logo">
+    <a class="layout-topbar-logo" routerLink="">
         <img src="assets/layout/images/{{appMain.config.dark ? 'kalantak' : 'mylogo'}}.png" alt="logo">
     </a>
     <a class="p-link layout-menu-button layout-topbar-button" href="#" (click)="appMain.toggleMenu($event)">
@@ -48,10 +48,11 @@
         
         
     </div>
-    <p-menu  [showTransitionOptions]="'0ms'"   #lastmenu [model]="profileitems" [popup]="true" ></p-menu>
-    <p-menu   [showTransitionOptions]="'0ms'"  #appmenu [model]="appitems" [popup]="true" ></p-menu>
-    <p-menu [showTransitionOptions]="'0ms'"    #flagmenu [model]="flagitems" [popup]="true" ></p-menu>
+ 
  
 
   
 </div>
+<p-menu  [showTransitionOptions]="'0ms'"   #lastmenu [model]="profileitems" [popup]="true" ></p-menu>
+<p-menu   [showTransitionOptions]="'0ms'"  #appmenu [model]="appitems" [popup]="true" ></p-menu>
+<p-menu [showTransitionOptions]="'0ms'"    #flagmenu [model]="flagitems" [popup]="true" ></p-menu>
