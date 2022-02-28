@@ -10,7 +10,7 @@
     transition: left $transitionDuration;
     display: flex;
     align-items: center;
-    // background: #fbfaff;
+   
     box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
 
     .set-topbar{
@@ -18,10 +18,9 @@
         border-right: 1px solid #e9e9ef;
         width: 235px;
         height: 70px;
-        // justify-content: center;
         align-items: center;
         background: #fbfaff;
-        // background: #fbfaff;
+       
     }
 
     .layout-topbar-logo {
