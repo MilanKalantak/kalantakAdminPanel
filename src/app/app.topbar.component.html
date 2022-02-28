@@ -1,34 +1,54 @@
-
-<!-- <div class="layout-topbar"> -->
-    <header class="layout-topbar">
-   <div class="set-topbar"> 
-    <a class="layout-topbar-logo" routerLink="">
-        <img src="assets/layout/images/{{appMain.config.dark ? 'logo-white' : 'mylogo'}}.png" alt="logo">
-        <!-- <span>SAKAI</span> -->
-    </a>
-
-
+<div class="layout-topbar">
     <a class="p-link layout-menu-button layout-topbar-button" href="#" (click)="appMain.toggleMenu($event)">
         <i class="pi pi-bars"></i>
     </a>
-    </div>
+
     <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#" (click)="appMain.toggleTopMenu($event)">
         <i class="pi pi-ellipsis-v"></i>
     </a>
-
-    <div class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active':appMain.topMenuActive}">
+    <a class="p-inputgroup {'layout-topbar-menu-mobile-active':appMain.topMenuActive} layout-topbar-menu " >
+        <input type="text" pInputText placeholder="Search...">   
+        <button type="button" pButton pRipple icon="pi pi-search" styleClass="p-button-warn"></button>      
+    </a>
+    <div class="layout-topbar-menu " [ngClass]="{'layout-topbar-menu-mobile-active':appMain.topMenuActive}">
+        
+        <a href="#" class="p-link layout-topbar-button">
+            <img class="flag" src="assets/layout/images/flag.png" alt="flag" (click)="flagmenu.toggle($event)" >
+            
+        </a>
          <a href="#" class="p-link layout-topbar-button">
-            <i class="pi pi-calendar"></i>
-            <span>Calendar</span>
+            <i class="pi pi-moon"></i>
+           
+        </a>
+        <a href="#" class="p-link layout-topbar-button">
+        <i   class="pi pi-th-large" (click)="appmenu.toggle($event)"></i>
+      
+        </a>
+        <a href="#" class="p-link layout-topbar-button">
+            <i class="pi pi-bell" pBadge   value="4" severity="danger"></i>
+           
         </a>
         <a href="#" class="p-link layout-topbar-button">
             <i class="pi pi-cog"></i>
-            <span>Settings</span>
+           
         </a>
-        <a href="#" class="p-link layout-topbar-button">
-            <i class="pi pi-user"></i>
-            <span>Profile</span>
+      
+        <a class="p-link layout-topbar-button">
+       
+        
+            <p-avatar image="assets/layout/images/avtar.png"  shape="circle" size="large"> </p-avatar>
+            
         </a>
+        <a class="p-link layout-topbar-button">
+            <i   class="pi pi-angle-down "   (click)="lastmenu.toggle($event)"></i>
+        </a>
+        
+        
     </div>
-</header>
-<!-- </div> -->
+    <p-menu  [showTransitionOptions]="'0ms'"   #lastmenu [model]="profileitems" [popup]="true" ></p-menu>
+    <p-menu   [showTransitionOptions]="'0ms'"  #appmenu [model]="appitems" [popup]="true" ></p-menu>
+    <p-menu [showTransitionOptions]="'0ms'"    #flagmenu [model]="flagitems" [popup]="true" ></p-menu>
+ 
+
+  
+</div>
