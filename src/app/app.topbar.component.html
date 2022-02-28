@@ -6,8 +6,8 @@
         <i class="pi pi-bars"></i>
     </a>
 
-    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#" (click)="appMain.toggleTopMenu($event)">
-        <i class="pi pi-ellipsis-v"></i>
+    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#">
+        <i class="pi pi-ellipsis-v" (click)="responsiveclick.toggle($event)"></i>
     </a>
     <a class="p-inputgroup {'layout-topbar-menu-mobile-active':appMain.topMenuActive} layout-topbar-menu " >
         <input type="text" pInputText placeholder="Search...">   
@@ -48,11 +48,8 @@
         
         
     </div>
- 
- 
-
-  
 </div>
 <p-menu  [showTransitionOptions]="'0ms'"   #lastmenu [model]="profileitems" [popup]="true" ></p-menu>
 <p-menu   [showTransitionOptions]="'0ms'"  #appmenu [model]="appitems" [popup]="true" ></p-menu>
 <p-menu [showTransitionOptions]="'0ms'"    #flagmenu [model]="flagitems" [popup]="true" ></p-menu>
+<p-menu [showTransitionOptions]="'0ms'"    #responsiveclick [model]="responsiveitems" [popup]="true" ></p-menu>

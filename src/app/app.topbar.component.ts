@@ -11,6 +11,7 @@ export class AppTopBarComponent {
    appitems: MenuItem[];
     profileitems: MenuItem[];
     flagitems:MenuItem[];
+    responsiveitems: MenuItem[];
    
   
    
@@ -67,18 +68,101 @@ export class AppTopBarComponent {
       
          },
      ],
-     this.flagitems=[
-         {
+   //   this.flagitems=[
+   //       {
              
-            label:'US',
-            icon: 'assets/layout/images/us.jpg',
-         },
-         {
+   //          label:'US',
+   //          icon: 'assets/layout/images/us.jpg',
+   //       },
+   //       {
              
-            label:'Spain',
-            icon: 'assets/layout/images/spain.jpg',
-         }
-     ];
+   //          label:'Spain',
+   //          icon: 'assets/layout/images/spain.jpg',
+   //       }
+   //   ],
+     this.responsiveitems=[
+      {
+          
+         label:'mode',
+         items:[
+            {
+               label:'Dark Mode',
+               icon:'pi pi-moon',
+           
+            },
+            {
+               label:'Light mode',
+               icon:' pi pi-sun',
+           
+            },
+         ]
+      },
+      {
+             
+         label:'apps',
+         items:[
+            {
+               label:'GitHub',
+               icon:'pi pi-fw pi-github',
+           
+            },
+            {
+               label:'Bitbucket',
+               icon:'pi pi-lock',
+           
+            },
+            {
+               label:'Dribble',
+               icon:'pi pi-logout',
+         
+            },
+            {
+               label:'Dropbox',
+               icon:'pi pi-logout',
+         
+            },
+            {
+               label:'Mail Chimp',
+               icon:'pi pi-logout',
+         
+            },
+            {
+               label:'Stack',
+               icon:'pi pi-logout',
+         
+            },
+
+         ],
+      },
+      {
+             
+         label:'Setting',
+         icon: 'pi pi-cog',
+      },
+      {
+          
+         label:'More',
+         icon: 'pi pi-angle-down',
+         items:[
+            {
+               label:'Profile',
+               icon:'pi pi-fw pi-file',
+           
+            },
+            {
+               label:'Lock Screen',
+               icon:'pi pi-lock',
+           
+            },
+            {
+               label:'log Out',
+               icon:'pi pi-logout',
+         
+            },
+
+         ]
+      },
+     ]
     }
 }
 
