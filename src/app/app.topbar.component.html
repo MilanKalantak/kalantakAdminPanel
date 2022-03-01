@@ -21,7 +21,11 @@
             <img class="flag" src="assets/layout/images/flag.png" alt="flag" (click)="flagmenu.toggle($event)" >
         </a>
          <a href="#" class="p-link layout-topbar-button">
-            <i class="pi pi-moon"></i>
+            <i class="pi pi-moon " (click)="changeTheme('bootstrap4-dark-blue', true)" ></i>
+           
+        </a>
+        <a href="#" class="p-link layout-topbar-button">
+            <i class="pi pi-sun "(click)="changeTheme('bootstrap4-light-blue', false)" ></i>
            
         </a>
         <a href="#" class="p-link layout-topbar-button">

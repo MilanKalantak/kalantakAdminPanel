@@ -2,7 +2,8 @@ import { Component, OnDestroy } from '@angular/core';
 import { AppMainComponent } from './app.main.component';
 import { Subscription } from 'rxjs';
 import { MenuItem } from 'primeng/api';
-
+import { ConfigService } from './service/app.config.service';
+import { AppConfig } from './api/appconfig';
 @Component({
     selector: 'app-topbar',
     templateUrl: './app.topbar.component.html'
@@ -14,11 +15,18 @@ export class AppTopBarComponent {
     responsiveitems: MenuItem[];
     side:MenuItem[];
   
+    config: AppConfig;
+  
   
    
 
 
-    constructor(public appMain: AppMainComponent) { }
+    constructor(public appMain: AppMainComponent, public configService: ConfigService) { }
+    changeTheme(theme:string, dark:boolean){
+      let themeElement = document.getElementById('theme-css');
+      themeElement.setAttribute('href', 'assets/theme/' + theme + '/theme.css');
+      this.configService.updateConfig({...this.config, ...{theme, dark}});
+    }
     ngOnInit() {
   
         this.profileitems = [
@@ -89,7 +97,7 @@ export class AppTopBarComponent {
          items:[
             {
                label:'Dark Mode',
-               icon:'pi pi-moon',
+               icon:'pi pi-moon ',
            
             },
             {
@@ -186,6 +194,8 @@ export class AppTopBarComponent {
      },
 
    ]
+   
     }
+    
 }
 
