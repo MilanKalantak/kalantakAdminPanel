@@ -4,14 +4,13 @@
             .layout-main-container {
                 margin-left: 0;
                 padding-left: 2rem;
-              
             }
 
             .layout-sidebar {
                 transform: translateX(-100%);
                 left: 0;
                 top: 0;
-                height: 100vh;
+                height: 300vh;
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
             }
@@ -58,7 +57,7 @@
             transform: translateX(-100%);
             left: 0;
             top: 0;
-            height: 100vh;
+            height: 300vh;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
         }

@@ -4,21 +4,6 @@ import { AppMainComponent } from './app.main.component';
 @Component({
     selector: 'app-menu',
     template: `
-        <!-- <div class="layout-menu-container">
-        <p-scrollPanel [style]="{width: '100%', height: '600px'}">        
-                <ul class="layout-menu" role="menu" (keydown)="onKeydown($event)">
-                <li app-menu class="layout-menuitem-category" *ngFor="let item of model; let i = index;" [item]="item" [index]="i" [root]="true" role="none">
-                    <div class="layout-menuitem-root-text" [attr.aria-label]="item.label">{{item.label}}</div>
-                    <ul role="menu">
-                        <li app-menuitem *ngFor="let child of item.items" [item]="child" [index]="i" role="none"></li>
-                    </ul>
-                </li>
-                <a href="https://www.primefaces.org/primeblocks-ng/#/">
-                    <img src="assets/layout/images/{{appMain.config.dark ? 'banner-primeblocks-dark' : 'banner-primeblocks'}}.png" alt="Prime Blocks" class="w-full mt-3"/>
-                </a>
-            </ul>
-            </p-scrollPanel>
-        </div> -->
         <div class="layout-menu-container">
         <p-scrollPanel [style]="{width: '100%', height: '600px'}">        
                 <ul class="layout-menu" role="menu" (keydown)="onKeydown($event)">
@@ -26,7 +11,6 @@ import { AppMainComponent } from './app.main.component';
                     <div class="layout-menuitem-root-text" [attr.aria-label]="item.label">{{item.label}}</div>
                     <ul role="menu">
                         <li app-menuitem *ngFor="let child of item.items" [item]="child" [index]="i" role="none"></li>
-
                     </ul>
                 </li>
                 <a href="https://www.primefaces.org/primeblocks-ng/#/">
