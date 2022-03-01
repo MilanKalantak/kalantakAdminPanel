@@ -343,7 +343,7 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
 }
 .p-datepicker .p-datepicker-header .p-datepicker-prev:enabled:hover,
 .p-datepicker .p-datepicker-header .p-datepicker-next:enabled:hover {
-  color: #495057;
+ 
   border-color: transparent;
   background: transparent;
 }
@@ -430,7 +430,7 @@ p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
   transition: box-shadow 0.15s;
 }
 .p-datepicker .p-timepicker button:enabled:hover {
-  color: #495057;
+  /* color: #495057; */
   border-color: transparent;
   background: transparent;
 }
@@ -1304,7 +1304,7 @@ p-dropdown.ng-dirty.ng-invalid > .p-dropdown {
   transition: box-shadow 0.15s;
 }
 .p-multiselect-panel .p-multiselect-header .p-multiselect-close:enabled:hover {
-  color: #495057;
+  /* color: #495057; */
   border-color: transparent;
   background: transparent;
 }
@@ -1582,27 +1582,27 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
 }
 
 .p-togglebutton.p-button {
-  background: #6c757d;
-  border: 1px solid #6c757d;
-  color: #ffffff;
+  background: white;
+  border: none;
+  color: black;
   transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
 .p-togglebutton.p-button .p-button-icon-left,
 .p-togglebutton.p-button .p-button-icon-right {
-  color: #ffffff;
+  color: black;
 }
 .p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover {
-  background: #5a6268;
-  border-color: #545b62;
-  color: #ffffff;
+  background: white;
+ 
+  color: black;
 }
 .p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover .p-button-icon-left,
 .p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover .p-button-icon-right {
-  color: #ffffff;
+  color: black;
 }
 .p-togglebutton.p-button.p-highlight {
-  background: #545b62;
-  border-color: #4e555b;
+  background: white;
+ 
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight .p-button-icon-left,
@@ -1610,16 +1610,16 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight:hover {
-  background: #545b62;
-  border-color: #4e555b;
-  color: #ffffff;
+  background: white;
+ 
+  color: black;
 }
 .p-togglebutton.p-button.p-highlight:hover .p-button-icon-left,
 .p-togglebutton.p-button.p-highlight:hover .p-button-icon-right {
-  color: #ffffff;
+  color: black;
 }
 
-p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
+.p-togglebutton.ng-dirty.ng-invalid > .p-togglebutton.p-button {
   border-color: #dc3545;
 }
 
