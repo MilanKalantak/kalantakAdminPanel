@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 991px) {
     .layout-wrapper {
         &.layout-overlay {
             .layout-main-container {
@@ -81,6 +81,9 @@
                 display: block;
             }
         }
+    }
+    .headdiv{
+        display: none;
     }
 
     .body-overflow-hidden {
