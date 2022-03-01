@@ -16,17 +16,27 @@ export class AppTopBarComponent {
     side:MenuItem[];
   
     config: AppConfig;
-  
+    checked1:boolean=false;
   
    
-
+  
 
     constructor(public appMain: AppMainComponent, public configService: ConfigService) { }
-    changeTheme(theme:string, dark:boolean){
+    
+    
+    changeTheme(){
+      if(this.checked1 == true){
+     this.theme("bootstrap4-dark-purple",true);
+      }
+      else{
+         this.theme("bootstrap4-light-purple",false);
+      }
+    }
+    theme(theme:string, dark:boolean){
       let themeElement = document.getElementById('theme-css');
       themeElement.setAttribute('href', 'assets/theme/' + theme + '/theme.css');
       this.configService.updateConfig({...this.config, ...{theme, dark}});
-    }
+         }
     ngOnInit() {
   
         this.profileitems = [

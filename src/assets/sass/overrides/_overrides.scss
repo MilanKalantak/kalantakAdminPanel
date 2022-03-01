@@ -1,29 +1,24 @@
 // Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
-.p-inputgroup{
+.p-inputgroup {
     width: 15%;
-    .p-inputtext{
-    background-color: #f3f3f9;
-    border-color: #f3f3f9;
-    font-size: 12px;
-    }
-    .p-button{
-        box-shadow: 0 2px 6px #5156be;
-        background: #5156be;
+    .p-inputtext {
        
+        font-size: 12px;
+    }
+    .p-button {
+        box-shadow: 0 2px 6px #5156be;
+        
     }
 }
-.layout-topbar .search{
+.layout-topbar .search {
     margin-left: 12px;
 }
-.p-button{
-    
-    background-color: #5156be;
-    border-color: #5156be;
-   
+.layout-topbar .layout-topbar-button span{
+    display: block;
 }
 
 .headdiv{
-    // display: flex;
+
     justify-content: center;
     border-right: 1px solid #DCDCDC;
      padding-right: 7px;  
@@ -35,7 +30,6 @@
 .mt-5 {
     margin-top: 3rem !important;
 }
-
 
 
 
