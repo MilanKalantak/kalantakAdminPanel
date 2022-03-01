@@ -1783,11 +1783,11 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
   background: rgba(255, 255, 255, 0.16);
   color: rgba(255, 255, 255, 0.6);
 }
-.p-button:focus {
+/* .p-button:focus {
   outline: 0 none;
   outline-offset: 0;
   box-shadow: 0 0 0 1px #f0e6f5;
-}
+} */
 .p-button .p-button-icon-left {
   margin-right: 0.5rem;
 }
@@ -2790,10 +2790,6 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
   padding: 1.25rem;
 }
 
-.fc {
-  /* FullCalendar 4 */
-  /* FullCalendar 5 */
-}
 .fc.fc-unthemed .fc-view-container th {
   background: #2a323d;
   border: 1px solid #3f4b5b;
