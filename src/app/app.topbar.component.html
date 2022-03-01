@@ -1,6 +1,6 @@
 <div class="layout-topbar">
     <a class="layout-topbar-logo" routerLink="">
-        <img src="assets/layout/images/{{appMain.config.dark ? 'kalantakwhite' : 'kalantak'}}.png" alt="logo">
+        <img src="assets/layout/images/{{appMain.config.dark ? 'kalantak' : 'kalantak'}}.png" alt="logo">
     </a>
     <div style="border-right: black;">
         <a class="p-link layout-menu-button layout-topbar-button" href="#" (click)="appMain.toggleMenu($event)">
@@ -24,13 +24,7 @@
         </a>
 
         <a href="#" class="p-link layout-topbar-button">
-            <i class="pi pi-th-large" (click)="appmenu.toggle($event)"></i>
-
-            <img class="flag" src="assets/layout/images/flag.png" alt="flag" (click)="flagmenu.toggle($event)">
-        </a>
-
-        <a href="#" class="p-link layout-topbar-button">
-            <p-toggleButton [(ngModel)]="checked1" onIcon=" pi pi-sun" offIcon="pi pi-moon" (click)="changeTheme()">
+            <p-toggleButton [(ngModel)]="checked1" onIcon="pi pi-sun" offIcon="pi pi-moon" (click)="changeTheme()">
             </p-toggleButton>
 
         </a>

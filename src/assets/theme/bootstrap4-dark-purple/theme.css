@@ -48,10 +48,9 @@
 * {
   box-sizing: border-box;
 }
-.pi{
-  color:white;
+.pi {
+  color: white;
 }
-
 
 .p-component {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
@@ -1606,6 +1605,7 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
 
 .p-togglebutton.p-button {
   color: #ffffff;
+  background: #2a323d;
   border: none;
   transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
@@ -1614,8 +1614,6 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
   color: #ffffff;
 }
 .p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover {
-  background: #5a6268;
-  border-color: #545b62;
   color: #ffffff;
 }
 .p-togglebutton.p-button:not(.p-disabled):not(.p-highlight):hover .p-button-icon-left,
@@ -1623,8 +1621,7 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight {
-  background: #545b62;
-  border-color: #4e555b;
+  border: none;
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight .p-button-icon-left,
@@ -1632,8 +1629,6 @@ p-selectbutton.ng-dirty.ng-invalid > .p-selectbutton > .p-button {
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight:hover {
-  background: #545b62;
-  border-color: #4e555b;
   color: #ffffff;
 }
 .p-togglebutton.p-button.p-highlight:hover .p-button-icon-left,
