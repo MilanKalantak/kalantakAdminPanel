@@ -13,9 +13,9 @@ import { AppMainComponent } from './app.main.component';
                         <li app-menuitem *ngFor="let child of item.items" [item]="child" [index]="i" role="none"></li>
                     </ul>
                 </li>
-                <a href="https://www.primefaces.org/primeblocks-ng/#/">
+                <!-- <a href="https://www.primefaces.org/primeblocks-ng/#/">
                     <img src="assets/layout/images/{{appMain.config.dark ? 'banner-primeblocks-dark' : 'banner-primeblocks'}}.png" alt="Prime Blocks" class="w-full mt-3"/>
-                </a>
+                </a> -->
             </ul>
             </p-scrollPanel>
         </div>
@@ -75,7 +75,7 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     { label: 'Crud', icon: 'pi pi-fw pi-user-edit', routerLink: ['/pages/crud'] },
                     { label: 'Timeline', icon: 'pi pi-fw pi-calendar', routerLink: ['/pages/timeline'] },
-                    { label: 'Landing', icon: 'pi pi-fw pi-globe', routerLink: ['pages/landing'] },
+                    // { label: 'Landing', icon: 'pi pi-fw pi-globe', routerLink: ['pages/landing'] },
                     { label: 'Login', icon: 'pi pi-fw pi-sign-in', routerLink: ['pages/login'] },
                     { label: 'Error', icon: 'pi pi-fw pi-times-circle', routerLink: ['pages/error'] },
                     { label: 'Not Found', icon: 'pi pi-fw pi-exclamation-circle', routerLink: ['pages/notfound'] },
