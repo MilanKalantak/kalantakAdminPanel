@@ -60,14 +60,14 @@ export class AppMenuComponent implements OnInit {
                 label: 'Prime Blocks',
                 items: [
                     { label: 'Free Blocks', icon: 'pi pi-fw pi-eye', routerLink: ['/blocks'], badge: 'NEW' },
-                    { label: 'All Blocks', icon: 'pi pi-fw pi-globe', url: ['https://www.primefaces.org/primeblocks-ng'], target: '_blank' },
+                    // { label: 'All Blocks', icon: 'pi pi-fw pi-globe', url: ['https://www.primefaces.org/primeblocks-ng'], target: '_blank' },
                 ]
             },
             {
                 label: 'Utilities',
                 items: [
                     { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', routerLink: ['/icons'] },
-                    { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: ['https://www.primefaces.org/primeflex/'], target: '_blank' },
+                    // { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: ['https://www.primefaces.org/primeflex/'], target: '_blank' },
                 ]
             },
             {
@@ -125,17 +125,17 @@ export class AppMenuComponent implements OnInit {
                     }
                 ]
             },
-            {
-                label: 'Get Started',
-                items: [
-                    {
-                        label: 'Documentation', icon: 'pi pi-fw pi-question', routerLink: ['/documentation']
-                    },
-                    {
-                        label: 'View Source', icon: 'pi pi-fw pi-search', url: ['https://github.com/primefaces/sakai-ng'], target: '_blank'
-                    }
-                ]
-            }
+            // {
+            //     label: 'Get Started',
+            //     items: [
+            //         {
+            //             label: 'Documentation', icon: 'pi pi-fw pi-question', routerLink: ['/documentation']
+            //         },
+            //         {
+            //             label: 'View Source', icon: 'pi pi-fw pi-search', url: ['https://github.com/primefaces/sakai-ng'], target: '_blank'
+            //         }
+            //     ]
+            // }
         ];
     }
 

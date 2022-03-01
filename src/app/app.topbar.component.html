@@ -1,5 +1,5 @@
 <div class="layout-topbar">
-    <div class="headdiv">
+    <!-- <div class="headdiv"> -->
     <a class="layout-topbar-logo" routerLink="">
         <img src="assets/layout/images/{{appMain.config.dark ? 'kalantak' : 'kalantak'}}.png" alt="logo">
     </a>
@@ -8,9 +8,12 @@
         <i class="pi pi-bars"  ></i>
     </a>
 </div>
-    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#">
-        <i class="pi pi-ellipsis-v" (click)="responsiveclick.toggle($event)"></i>
+    <a class="p-link layout-topbar-menu-button layout-topbar-button" href="#" >
+        <i class="pi pi-ellipsis-v" (click)="responsiveclick.toggle($event)" ></i>
     </a>
+<!-- </div> -->
+<div class="headdiv">
+
 </div>
     <div class="p-inputgroup {'layout-topbar-menu-mobile-active':appMain.topMenuActive} layout-topbar-menu search">
 
