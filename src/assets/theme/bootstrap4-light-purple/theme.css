@@ -87,7 +87,6 @@
 .p-link:focus {
   outline: 0 none;
   outline-offset: 0;
-
 }
 
 .p-component-overlay-enter {
@@ -1086,8 +1085,8 @@ p-inputswitch.ng-dirty.ng-invalid > .p-inputswitch {
 .p-inputtext:enabled:focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.2rem #5156be;
-  border-color: #5156be;
+  box-shadow: 0 0 0 0.1rem #ced4da;
+  border-color: #dcd2f0;
 }
 .p-inputtext.ng-dirty.ng-invalid {
   border-color: #dc3545;
@@ -1725,12 +1724,12 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 .p-button:enabled:hover {
   background: #4549a2;
   color: #ffffff;
-  border-color: #4549a2;
+  border-color: #ced4da;
 }
 .p-button:enabled:active {
   background: #4549a2;
   color: #ffffff;
-  border-color: #4549a2;
+  border-color: #ced4da;
 }
 .p-button.p-button-outlined {
   background-color: transparent;
@@ -1788,7 +1787,6 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 .p-button:focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.2rem #5156be;
 }
 .p-button .p-button-icon-left {
   margin-right: 0.5rem;
@@ -2791,7 +2789,6 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
 .p-column-filter-overlay-menu .p-column-filter-buttonbar {
   padding: 1.25rem;
 }
-
 
 .fc.fc-unthemed .fc-view-container th {
   background: #efefef;
