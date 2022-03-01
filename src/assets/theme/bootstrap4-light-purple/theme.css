@@ -87,7 +87,7 @@
 .p-link:focus {
   outline: 0 none;
   outline-offset: 0;
-  box-shadow: 0 0 0 0.2rem rgba(136, 60, 174, 0.5);
+  box-shadow: 0 0 0 0.0rem #4549A2;
 }
 
 .p-component-overlay-enter {
@@ -2792,10 +2792,7 @@ p-treeselect.ng-invalid.ng-dirty > .p-treeselect {
   padding: 1.25rem;
 }
 
-.fc {
-  /* FullCalendar 4 */
-  /* FullCalendar 5 */
-}
+
 .fc.fc-unthemed .fc-view-container th {
   background: #efefef;
   border: 1px solid #dee2e6;
