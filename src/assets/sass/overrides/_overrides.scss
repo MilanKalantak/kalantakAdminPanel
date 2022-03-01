@@ -2,8 +2,7 @@
 .p-inputgroup {
     width: 15%;
     .p-inputtext {
-        background-color: #f3f3f9;
-        border-color: #f3f3f9;
+       
         font-size: 12px;
     }
     .p-button {
@@ -13,4 +12,7 @@
 }
 .layout-topbar .search {
     margin-left: 12px;
+}
+.layout-topbar .layout-topbar-button span{
+    display: block;
 }
